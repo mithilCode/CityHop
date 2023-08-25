@@ -1,0 +1,192 @@
+@import "../../../Assets/Styles/Styles.scss";
+.home_service_list {
+  padding-top: 20px;
+  .btnset {
+    max-width: 500px;
+    margin: 30px auto;
+  }
+
+  .home_service_text {
+    padding: 30px 0;
+    h2 {
+      @include heading_text;
+      text-align: center;
+      color: $dark;
+      line-height: 2;
+    }
+    .description {
+      @include description_text;
+      text-align: center;
+      width: 100%;
+      margin: 0 auto;
+      max-width: 90%;
+    }
+  }
+  .list_set {
+    .main_list_accroding {
+      box-shadow: none;
+      border: none;
+      margin: 10px 0;
+      border-radius: $border_radius;
+      &::before {
+        display: none;
+      }
+      .list_heading_set {
+        display: flex;
+        align-items: center;
+        .list_name {
+          @include content_text;
+          margin-left: 20px;
+        }
+      }
+      .expandIcon {
+        font-size: 30px;
+      }
+    }
+  }
+  .sublist {
+    background-color: $light_sky;
+    border-radius: $border_radius;
+    padding: 8px 15px;
+
+    cursor: pointer;
+    .sublist_header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .sublist_name {
+      @include subcontent_text;
+    }
+    .edit_icon {
+      max-width: 30px;
+    }
+  }
+  .finalservice_list {
+    .service_box {
+      background-color: #fff;
+      border-radius: $border_radius;
+      min-height: 100px;
+      display: flex;
+      align-items: center;
+      padding: 20px;
+      justify-content: space-between;
+      margin: 10px 0;
+      .service_name {
+        p {
+          font-size: 15px;
+          font-weight: 600;
+        }
+        h5 {
+          font-size: 18px;
+          @include textGradient_red;
+          font-weight: 700;
+        }
+      }
+      img {
+        max-width: 25px;
+        width: 100%;
+      }
+    }
+  }
+  .submit_btn {
+    max-width: 500px;
+    width: 100%;
+    margin: 30px auto;
+  }
+  .add_bank_section {
+    padding: 50px 80px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    width: 100%;
+    h2 {
+      @include heading_text;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    img {
+      max-width: 200px;
+      width: 100%;
+      margin: 50px auto;
+      display: block;
+    }
+  }
+  .bank_list {
+    background-color: #eaf2ff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 4px;
+    input[type="radio"] {
+      accent-color: #643aff;
+      width: 15px;
+      height: 15px;
+    }
+    .bank_detail {
+      padding-left: 10px;
+      h5 {
+        color: #000;
+        font-weight: 600;
+        font-size: 20px;
+      }
+      p {
+        color: $light_gray;
+        font-weight: 600;
+      }
+    }
+    .delete_data {
+      border-radius: 50%;
+      background-color: #fff;
+      width: 30px;
+      height: 30px;
+      padding: 5px;
+      img {
+        margin: 0;
+      }
+    }
+  }
+  .addnew_bank {
+    padding: 30px 0;
+    a {
+      text-align: center;
+      display: block;
+      text-decoration: none;
+      color: red;
+      font-weight: 600;
+    }
+  }
+}
+.modal_content {
+  p {
+    text-align: start;
+    color: #000;
+    line-height: 1;
+    font-weight: 600;
+  }
+}
+
+@media (max-width: 1399.98px) {
+}
+
+@media (max-width: 1199.98px) {
+}
+
+@media (max-width: 991.98px) {
+}
+
+@media (max-width: 767.98px) {
+}
+
+@media (max-width: 575.98px) {
+  .home_service_list {
+    .add_bank_section {
+      padding: 20px;
+      h2 {
+        font-size: 20px;
+      }
+    }
+  }
+}

@@ -1,0 +1,60 @@
+@import "../../Assets/Styles/Styles.scss";
+.requestbox {
+  .box_header_set {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .user_name {
+    font-size: 18px;
+    margin-left: 10px;
+    font-weight: 600;
+  }
+  .map_set {
+    margin: 20px 0;
+    iframe {
+      max-width: 100%;
+      width: 100%;
+      border-radius: 10px;
+      height: 100px;
+    }
+  }
+  .description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h5 {
+      @include content_text;
+    }
+  }
+  .timing {
+    display: flex;
+    align-items: center;
+    p {
+      @include description_text;
+    }
+    .set_timing {
+      margin-top: 10px;
+      margin-right: 10px;
+      display: flex;
+      align-items: center;
+    }
+  }
+  .img_view {
+    margin: 10px 0;
+    button {
+      background-color: #636370;
+      width: 35px;
+      border: none;
+      border-radius: 6px;
+      height: 35px;
+      font-size: 20px;
+      color: #fff;
+    }
+  }
+  .description_text {
+    p {
+      @include description_text;
+    }
+  }
+}

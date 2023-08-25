@@ -1,0 +1,257 @@
+@import "../../../Assets/Styles/Styles.scss";
+.home_service_list {
+  padding-top: 20px;
+  .home_service_text {
+    padding: 30px 0;
+    h2 {
+      @include heading_text;
+      text-align: center;
+      color: $dark;
+      line-height: 2;
+    }
+    .description {
+      @include description_text;
+      text-align: center;
+      width: 100%;
+      margin: 0 auto;
+      max-width: 90%;
+    }
+  }
+  .list_set {
+    .main_list_accroding {
+      box-shadow: none;
+      border: none;
+      margin: 10px 0;
+      border-radius: $border_radius;
+      &::before {
+        display: none;
+      }
+      .list_heading_set {
+        display: flex;
+        align-items: center;
+        .list_name {
+          @include content_text;
+          margin-left: 20px;
+        }
+      }
+      .expandIcon {
+        font-size: 30px;
+      }
+    }
+  }
+  .sublist {
+    background: $light_sky;
+    border-radius: $border_radius;
+    padding: 8px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    &:hover{
+      background: $secondry_color;
+      color: #fff;
+      .sublist_name{    
+        color: #fff
+      }
+    }
+    .sublist_name {
+      @include subcontent_text;
+    }
+    .right_arrow {
+      background: $primary_color;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 25px;
+    }
+  }
+  .servicelist_box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: $border_radius_8;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    .dispaly_set {
+      display: flex;
+      align-items: flex-start;
+      .name_set {
+        margin: 0 10px;
+        h4 {
+          @include content_text;
+        }
+        .total_review {
+          color: $light_gray;
+          display: flex;
+          align-items: center;
+          margin: 5px 0;
+          .review_icon {
+            color: #ffc107;
+            margin-right: 5px;
+          }
+        }
+        .payout_rate {
+          @include content_text;
+        }
+      }
+    }
+    .hire_btn {
+      background: $secondry_color;
+      border: 2px solid transparent;
+      color: #fff;
+      max-width: 80px;
+      width: 100%;
+      font-weight: 600;
+      font-size: 15px;
+      border-radius: $border_radius;
+      &:hover {
+        background: transparent;
+        color: #ff5d4b;
+        border: 2px solid #ff5d4b;
+      }
+    }
+  }
+}
+.add_detail_section {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 40px;
+  background-color: #fff;
+  padding: 50px;
+  border-radius: $border_radius;
+  .heading {
+    @include heading_text;
+    text-align: center;
+    padding: 30px 0;
+  }
+  .input_frame {
+    border: 2px solid #dddddd;
+    border-radius: $border_radius;
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+  }
+  .upload_file {
+    position: relative;
+    border-radius: $border_radius;
+    padding: 30px 0;
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: $border_radius;
+    border: 2px dashed #fff;
+    background: linear-gradient(#fff 0 0) padding-box, $primary_color border-box;
+    .input_file {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      z-index: 999;
+    }
+    img {
+      width: 150px;
+      height: auto;
+    }
+  }
+  .upload_img_set {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    .upload_img {
+      position: relative;
+      padding: 10px;
+      img {
+        width: 100%;
+        height: 100px;
+        object-fit: contain;
+        border-radius: 10px;
+        box-shadow: 1px 1px 7px 2px $light_sky;
+        padding: 0;
+      }
+      .remove_btn {
+        position: absolute;
+        right: 0;
+        top: 0;
+        background: $secondry_color;
+        border: none;
+        color: #fff;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+}
+::placeholder {
+  color: $light_gray;
+}
+@media (max-width: 1399.98px) {
+}
+
+@media (max-width: 1199.98px) {
+}
+
+@media (max-width: 991.98px) {
+}
+
+@media (max-width: 767.98px) {
+}
+
+@media (max-width: 575.98px) {
+  .home_service_list {
+    padding-top: 5px;
+    .home_service_text {
+      padding: 10px 0;
+      h2 {
+        line-height: 1.5;
+        font-size: 20px;
+      }
+      .description {
+        font-size: 14px;
+        padding: 10px 0;
+        text-align: justify;
+      }
+    }
+    .list_set {
+      .main_list_accroding {
+        .list_heading_set {
+          img {
+            width: 40px;
+            height: 40px;
+          }
+          .list_name {
+            font-size: 16px;
+          }
+        }
+        .expandIcon {
+          font-size: 24px;
+        }
+      }
+    }
+    .sublist {
+      .sublist_name {
+        font-size: 14px;
+      }
+    }
+  }
+  .add_detail_section {
+    margin-top: 10px;
+    padding: 20px;
+    .heading {
+      padding: 10px 0;
+      font-size: $heading_small;
+    }
+    .input_frame {
+      padding: 20px;
+    }
+    .upload_file {
+      img {
+        max-width: 60px;
+      }
+    }
+  }
+}

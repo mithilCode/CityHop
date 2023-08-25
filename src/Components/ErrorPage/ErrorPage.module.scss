@@ -1,0 +1,49 @@
+.main_section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  background-color: #eaf2ff;
+  h2 {
+    font-size: 80px;
+    font-weight: 900;
+    background: linear-gradient(138.07deg, #6C33FF 0.24%, #00A4FF 75.21%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    line-height: 1;
+  }
+  h3{
+    font-size: 50px;
+    font-weight: 700;
+    background: linear-gradient(138.07deg, #6C33FF 0.24%, #00A4FF 75.21%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    line-height:1.5;
+  }
+  p{
+     background: linear-gradient( 314.84deg, #ff0000 -9.11%, #ff221c 10.74%, #ff483a 35.8%, #ff6451 58.77%, #ff755e 79.66%, #ff7b63 95.32% );
+     font-size: 20px;
+     font-weight: 600;
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+     background-clip: text;
+  }
+  .btn{
+    margin-top: 30px;
+    background:linear-gradient( 314.84deg, #ff0000 -9.11%, #ff221c 10.74%, #ff483a 35.8%, #ff6451 58.77%, #ff755e 79.66%, #ff7b63 95.32% ) ;
+    max-width: 300px;
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 22px;
+    text-align: center;
+    text-decoration: none;
+  }
+}

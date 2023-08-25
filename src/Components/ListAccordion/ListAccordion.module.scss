@@ -1,0 +1,25 @@
+@import '../../Assets/Styles/Styles.scss';
+.sublist {
+    background: $light_sky;
+    border-radius: $border_radius;
+    padding: 8px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    &:hover{
+      background: $secondry_color;
+      color: #fff;
+      .sublist_name{    
+        color: #fff
+      }
+    }
+    .sublist_name {
+      @include subcontent_text;
+    }
+    .right_arrow {
+      background: $primary_color;
+      -webkit-text-fill-color: transparent;
+      font-size: 25px;
+    }
+  }

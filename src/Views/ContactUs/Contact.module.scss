@@ -1,0 +1,26 @@
+@import '../../Assets/Styles/Styles.scss';
+.contactus_section{
+    background-color: #fff;
+    max-width: 900px;
+    width: 100%;
+    margin: 50px auto;
+    padding: 80px;
+    border-radius: $border_radius;
+    h2{
+      text-align: center;
+      @include heading_text;
+    }
+  }
+  @media (max-width: 1399.98px) {  }
+
+  @media (max-width: 1199.98px) {  }
+  
+  @media (max-width: 991.98px) {  }
+  
+  @media (max-width: 767.98px) {  }
+  
+  @media (max-width: 575.98px) {
+    .contactus_section{
+        padding: 15px;
+    }
+   }

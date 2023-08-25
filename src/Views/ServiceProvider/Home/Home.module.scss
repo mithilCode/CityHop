@@ -1,0 +1,31 @@
+@import "../../../Assets/Styles/Styles.scss";
+.home_section{
+  padding: 50px 10px;
+  h2{
+    @include heading_text;
+    text-align: center;
+    line-height: 2.5;
+  }
+  .description{
+    @include description_text;
+    text-align: center;
+    max-width: 80%;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .rating{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    svg{
+      font-size: 25px;
+      color: #ffc107;
+    }
+    b{
+      font-size: 18px;
+      margin-left: 5px;
+      color: $light_gray;
+      font-weight: 500;
+    }
+  }
+}

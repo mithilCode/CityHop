@@ -1,0 +1,211 @@
+@import "./Styles.scss";
+.tab_section {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  li {
+    width: 100%;
+    button {
+      width: 100%;
+      border: none;
+      padding: 15px 0;
+      font-weight: 600;
+      font-size: 16px;
+      background-color: #eaf2ff;
+      &.active {
+        background: $primary_color;
+        color: #fff;
+      }
+      &.tab_btn_1 {
+        border-radius: 10px 0 0 0;
+      }
+      &.tab_btn_2 {
+        border-radius: 0 10px 0 0;
+      }
+    }
+  }
+}
+.select_user {
+  max-width: 500px;
+  width: 100%;
+  background-color: $light_bg;
+  border-radius: 12px;
+  margin: 50px 0;
+  border: 1px solid $light_sky;
+}
+
+.tab_content {
+  padding: 30px 10px;
+  h2 {
+    @include heading_text;
+    text-align: center;
+    color: $dark;
+    line-height: 1.2;
+  }
+  p {
+    @include description_text;
+    text-align: center;
+    line-height: 1.5;
+  }
+  .form {
+    padding: 20px;
+    .forgot_link {
+      text-align: end;
+      a {
+        text-decoration: none;
+        color: $dark;
+        font-weight: 500;
+        font-size: 15px;
+        &:hover {
+          color: $blue;
+        }
+      }
+    }
+    .line_bar {
+      text-align: center;
+      span {
+        color: $dark;
+        font-weight: 600;
+        position: relative;
+        display: block;
+        width: 100%;
+        &::before {
+          content: "";
+          background: linear-gradient(
+            90deg,
+            rgba(45, 38, 56, 0.5) 0%,
+            rgba(45, 38, 56, 0) 99.03%
+          );
+          transform: matrix(-1, 0, 0, 1, 0, 0);
+          max-width: 200px;
+          width: 100%;
+          display: block;
+          height: 1px;
+          top: 50%;
+          left: 0;
+          position: absolute;
+        }
+        &::after {
+          content: "";
+          background: linear-gradient(
+            90deg,
+            rgba(45, 38, 56, 0.5) 0%,
+            rgba(45, 38, 56, 0) 99.03%
+          );
+          max-width: 200px;
+          width: 100%;
+          display: block;
+          height: 1px;
+          top: 50%;
+          right: 0;
+          position: absolute;
+        }
+      }
+    }
+    .confirm_policy {
+      display: flex;
+      input {
+        margin: 5px 10px 0 0;
+        width: 18px;
+        height: 18px;
+        accent-color: $blue;
+      }
+      label {
+        text-align: start;
+        cursor: pointer;
+        a{
+          color: #2C76FF;
+          text-decoration: none;
+          font-weight: 600;
+        }
+      }
+    }
+    .otp_input {
+      div {
+        justify-content: center;
+        input {
+          max-width: 50px;
+          width: 100% !important;
+          border: 1px solid $extra_lightgray;
+          border-radius: $border_radius;
+          background-color: transparent;
+          font-size: 22px;
+          font-weight: 600;
+          margin: 0 10px;
+          padding: 6px;
+        }
+      }
+    }
+  }
+  .register_link {
+    p {
+      color: $dark;
+    }
+    a {
+      background: $secondry_color;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      font-weight: 700;
+    }
+    span{
+      @include textGradient_red;
+      cursor: pointer;
+      font-weight:700
+    }
+  }
+}
+.error_set{
+  p{
+    text-align: start;
+    font-weight: 500;
+    color: red;
+    margin: 5px 0;
+  }
+}
+@media (max-width: 1399.98px) {
+}
+
+@media (max-width: 1199.98px) {
+}
+
+@media (max-width: 991.98px) {
+}
+
+@media (max-width: 767.98px) {
+}
+
+@media (max-width: 575.98px) {
+  .logo {
+    img {
+      max-width: 200px;
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+  .select_user {
+    margin: 20px 0;
+    .tab_content {
+      h2{
+        font-size: 22px;
+        line-height: 2;
+      }
+      p{
+        line-height: 1.3;
+      }
+      .form {
+        .line_bar {
+          span {
+            &::before {
+              max-width: 140px;
+            }
+            &::after {
+              max-width: 140px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

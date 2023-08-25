@@ -1,0 +1,275 @@
+@import "../../../Assets//Styles/Styles.scss";
+
+.booking_list {
+  padding: 50px;
+  .request_list_box {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: $border_radius;
+    height: 100%;
+    .profile {
+      display: flex;
+      align-items: flex-start;
+      .profile_img {
+        width: 50px !important;
+        height: 50px !important;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        span {
+          font-size: 18px;
+        }
+      }
+      .sp_name {
+        padding: 0 20px;
+        h4 {
+          @include content_text;
+        }
+        P {
+          display: flex;
+          align-items: center;
+          color: $light_gray;
+          svg {
+            color: #ffc107;
+            font-size: 18px;
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+    .user_action {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width:110px;
+      img {
+        margin: 0 5px;
+      }
+      .payment_btn {
+        background:$secondry_color;
+        max-width: 150px;
+        width: 100%;
+        padding: 5px;
+        font-weight: 600;
+        border-radius: $border_radius;
+        color: #fff;
+        border: none;
+      }
+    }
+    .map_set {
+      margin: 20px 0;
+      img {
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+        border-radius: $border_radius;
+      }
+    }
+    .service_description {
+      .service_name {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        h5 {
+          @include content_text;
+          line-height: 2;
+        }
+        p {
+          @include subcontent_text;
+        }
+      }
+      .timing {
+        display: flex;
+        align-items: center;
+        color: $light_gray;
+        font-weight: 600;
+        p{
+          margin-right: 5px;
+          font-size: 13px;
+        }
+      }
+      .uploaded_img {
+        margin: 10px 0;
+        button {
+          background: $secondry_color;
+          color: #fff;
+          max-width: 40px;
+          font-size: 20px;
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: $border_radius;
+          border: 1px solid transparent;
+        }
+      }
+      .service_desc {
+        color: $light_gray;
+      }
+    }
+  }
+}
+
+
+.amount_show {
+  padding: 10px 15px;
+  margin: 10px 0;
+  background-color: $light_sky;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  p {
+    font-weight: 900;
+    color: #000;
+    font-size: 15px;
+  }
+  h5 {
+    font-size: 15px;
+  }
+}
+.card_details {
+  background-color: $light_sky;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-radius: $border_radius;
+  input[type="radio"] {
+    margin-right: 10px;
+    width: 15px;
+    height: 15px;
+  }
+  h5 {
+    font-size: 15px;
+    font-weight: 600;
+  }
+  .delete_data {
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    padding: 7px;
+    &:hover {
+      background: $primary_color;
+    }
+    img {
+      width: 100%;
+    }
+  }
+}
+.addnew_card {
+  text-align: center;
+  p {
+    color: red;
+    font-weight: 700;
+    margin: 10px 0 0 0;
+    font-size: 16px;
+    cursor: pointer;
+    &:hover {
+      color: $blue;
+    }
+  }
+}
+.rating_style {
+  font-size: 25px;
+  .blank_rate {
+    color: #ffc107;
+  }
+  .fill_rate {
+    color: #ffc107;
+  }
+}
+.profile_view {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    max-width: 100px;
+    width: 100%;
+    border-radius: 50%;
+    margin: 0 10px;
+  }
+  p {
+    font-size: 18px;
+    color: #000;
+    line-height: 0.5;
+    font-weight: 700;
+  }
+}
+.write_review {
+  width: 100%;
+  margin: 15px 0;
+  padding: 10px;
+  border: 1px solid $light_gray;
+  resize: none;
+  height: 100px;
+  border-radius: $border_radius;
+}
+@media (max-width: 1399.98px) {
+}
+
+@media (max-width: 1199.98px) {
+}
+
+@media (max-width: 991.98px) {
+}
+
+@media (max-width: 767.98px) {
+}
+
+@media (max-width: 575.98px) {
+  .booking_list {
+    padding: 10px;
+  }
+  .chat_section {
+    padding: 0;
+    max-width: 100%;
+    .chat_window {
+      .chat_header {
+        padding: 5px;
+        img {
+          max-width: 40px;
+          width: 100%;
+        }
+        h5 {
+          font-size: 16px;
+        }
+      }
+      .user_chat {
+        height: calc(100vh - 290px);
+        padding: 10px 8px;
+        img {
+          max-width: 30px;
+          width: 100%;
+        }
+        .receive_chat {
+          max-width: 100%;
+          margin: 10px 0;
+          p {
+            font-size: 12px;
+          }
+        }
+        .send_chat {
+          max-width: 100%;
+          margin: 10px 0;
+          margin-left: auto;
+          p {
+            font-size: 13px;
+          }
+        }
+      }
+      .text_area {
+        .text_area_box {
+          padding: 10px 65px 10px 10px;
+        }
+        .send_btn {
+          right: 9%;
+        }
+      }
+    }
+  }
+}

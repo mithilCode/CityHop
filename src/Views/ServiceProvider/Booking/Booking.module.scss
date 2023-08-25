@@ -1,0 +1,65 @@
+@import "../../../Assets//Styles/Styles.scss";
+
+.booking_list {
+  padding: 50px;
+  .rating {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    svg {
+      font-size: 25px;
+      color: #ffc107;
+    }
+    b {
+      font-size: 18px;
+      margin-left: 5px;
+      color: $light_gray;
+      font-weight: 500;
+    }
+  }
+}
+.profile_view{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img{
+    margin: 0 10px;
+  }
+  .rating_style{
+    font-size: 20px;
+    line-height: 1;
+    p{
+      @include content_text
+    }
+    .content_text{
+      color: #ffc107;
+    }
+    .fill_rate{
+      color: #ffc107;
+    }
+  }
+  
+}
+.review{
+  margin-top: 20px;
+  p{
+    @include description_text
+  }
+}
+@media (max-width: 1399.98px) {
+}
+
+@media (max-width: 1199.98px) {
+}
+
+@media (max-width: 991.98px) {
+}
+
+@media (max-width: 767.98px) {
+}
+
+@media (max-width: 575.98px) {
+  .booking_list {
+    padding: 20px 0;
+  }
+}

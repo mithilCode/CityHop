@@ -1,0 +1,214 @@
+@import "../../Assets/Styles/Styles.scss";
+.header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+  background: #fff;
+  .header_profile {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    .notification_set {
+      position: relative;
+      cursor: pointer;
+      .active{
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        border-radius: 100%;
+        top: 20%;
+        right: 23%;
+        background:$primary_color;
+        padding: 4px;
+        outline: 2px solid #fff;
+      }
+      .notification_icon {
+        font-size: 25px;
+        color: $light_gray;
+        border-right: 2px solid #aba8af4a;
+        padding: 0 10px;
+      }
+    }
+    .notification_tab{
+      .offcanvas_header{
+        padding:20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: $primary_color;
+        h5{
+          font-weight: 600;
+          color: #fff;
+        }
+        button{
+          background-color: #fff !important;
+          color: $blue;
+          padding: 10px;
+          border-radius: 8px;
+          
+        }
+      }
+      .offcanvas_body{
+        padding:20px;
+        .notification_section{
+          display: flex;
+          align-items: baseline;
+          border-bottom: 1px solid $extra_lightgray;
+          padding: 15px 0;
+          margin: 0 10px;
+          .tick_icon{
+            background: $primary_color;
+            outline: 5px solid $extra_lightgray;
+            display: flex;
+            justify-content:center ;
+            align-items: center;
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            border-radius: 100%;
+            color: #fff;
+            padding: 3px;
+            margin-right:10px;
+          }
+          h5{
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 1.5;
+          }
+          p{
+            font-size: 13px;
+            color: $light_gray;
+            line-height: 1.5;
+          }
+          span{
+            color: #000;
+            font-size: 13px;
+            font-weight: 600;
+          }
+          
+        }
+      }
+    }
+    .logo {
+      img {
+        max-width: 200px;
+        width: 100%;
+      }
+    }
+    .profile_set {
+      display: flex;
+      align-items: center;
+      position: relative;
+      .nameset {
+        margin: 0 10px;
+        text-align: end;
+        h5 {
+          font-weight: 700;
+        }
+      }
+      .profile_open {
+        .profile_img {
+          cursor: pointer;
+        }
+        .open_menu {
+          position: absolute;
+          background: $secondry_color;
+          max-width: 130px;
+          width: 100%;
+          height: 40px;
+          right: 5px;
+          border-radius: 20px;
+          margin: 15px 0;
+          text-align: center;
+          padding: 0 10px;
+          &::before {
+            position: absolute;
+            content: "";
+            width: 20px;
+            height: 20px;
+            top: -12px;
+            right: 10px;
+            background-image: url("../../Assets/Images/arrow_up.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            z-index: 0;
+          }
+          a {
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 2;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            svg {
+              margin-right: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1399.98px) {
+}
+
+@media (max-width: 1199.98px) {
+}
+
+@media (max-width: 991.98px) {
+}
+
+@media (max-width: 767.98px) {
+}
+
+@media (max-width: 575.98px) {
+  .header {
+    .header_profile {
+      .logo {
+        img {
+          max-width: 110px;
+        }
+      }
+      .profile_set {
+        h5 {
+          font-size: 16px;
+        }
+        p{
+          font-size: 11px;
+          font-weight: 500;
+        }
+        .profile_img {
+          width: 35px !important;
+          height: 35px !important;
+        }
+      }
+      .notification_set{
+          .active{
+            width: 6px;
+            height: 6px;
+          }
+          .notification_icon{
+            font-size: 18px;
+          }
+      }
+      .notification_tab{
+        .offcanvas_body{
+          padding: 5px;
+          .notification_section{
+            .tick_icon{
+              margin-right: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+

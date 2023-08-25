@@ -1,0 +1,53 @@
+@import "./Assets/Fonts/stylesheet.css";
+@import "./Assets/Styles/Variable.scss";
+@import "./Assets/Styles/Mixin.scss";
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Univa Nova;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+:is(h1,h2,h3,h4,h5,h6,p,span){
+    margin: 0;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  display: none;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #6040ff;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #ff6b57;
+}
+.error_show{
+  @include textGradient_red;
+  font-size: 15px !important; 
+  font-weight: 600 !important;
+  text-align: start !important;
+}
+@media (max-width: 767.98px) {
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}
+::selection{
+  background-color: #3b66ff;
+  color: #fff;
+}

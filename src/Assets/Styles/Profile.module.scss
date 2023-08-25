@@ -1,0 +1,310 @@
+@import "./Styles.scss";
+.profile_section {
+  padding: 50px;
+  height: 100%;
+  .profile_list {
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      li {
+        width: 100%;
+        margin-bottom: 10px;
+        a {
+          background: #fff;
+          text-decoration: none;
+          color: #000;
+          padding: 15px;
+          width: 100%;
+          display: block;
+          border-radius: $border_radius;
+          font-size: 20px;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+  .profile_menu_content {
+    height: calc(100vh - 270px);
+    background-color: #fff;
+    border-radius: $border_radius;
+    padding: 50px;
+    overflow-y: scroll;
+  }
+
+  .edit_profile {
+    .change_password {
+      text-align: center;
+      background: $secondry_color;
+      font-size: 18px;
+      font-weight: 600;
+      cursor: pointer;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
+  .delete_account {
+    text-align: center;
+    padding: 40px 40px 0 40px;
+    h3 {
+      @include heading_text;
+    }
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      li {
+        margin: 10px 0;
+        text-decoration: none;
+        max-width: 100%;
+        text-align: start;
+        font-size: 18px;
+        font-weight: 600;
+        width: 100%;
+        display: block;
+        padding: 20px;
+        border-radius: $border_radius;
+        background: $light_sky;
+        position: relative;
+        &.active {
+          background: $primary_color;
+          color: #fff;
+        }
+        input[type="radio"] {
+          width: 100%;
+          position: absolute;
+          height: 100%;
+          top: 0;
+          left: 0;
+          opacity: 0;
+        }
+      }
+    }
+    .textarea_set {
+      textarea {
+        width: 100%;
+      }
+    }
+  }
+}
+.delete_acc {
+  h2 {
+    @include heading_text;
+    text-align: center;
+    margin: 10px 0;
+  }
+  p {
+    text-align: center;
+    color: $light_gray;
+  }
+  .delete_btn {
+    button {
+      background: $secondry_color;
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+}
+.logout_btn {
+  h2 {
+    @include heading_text;
+    text-align: center;
+    margin: 10px 0;
+  }
+  p {
+    text-align: center;
+    @include description_text;
+  }
+  .log_btn {
+    button {
+      background: $secondry_color;
+      &:hover {
+        color: #fff;
+        border-color: transparent;
+      }
+    }
+  }
+}
+
+.service_profile {
+  .profile_set {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    .profile_img {
+      max-width: 150px;
+      width: 100%;
+    }
+    .profile_detail {
+      p {
+        @include description_text;
+      }
+    }
+  }
+  .change_password {
+    @include textGradient_red;
+    text-align: center;
+    font-weight: 600;
+    font-size: 18px;
+    cursor: pointer;
+  }
+}
+.edit_services {
+  .accordion_styles {
+    background-color: $light_sky;
+    margin: 10px 0;
+    border-radius: $border_radius;
+    box-shadow: none;
+    border: none;
+    .expandIcon {
+      font-size: 30px;
+    }
+    &::before {
+      display: none;
+    }
+    .heading_set {
+      display: flex;
+      align-items: center;
+      img {
+        max-width: 40px;
+        margin-right: 10px;
+      }
+      .list_name {
+        font-size: 20px;
+        font-weight: 600;
+      }
+    }
+    .sublist {
+      background-color: $light_sky;
+      border-radius: $border_radius;
+      padding: 8px 15px;
+      cursor: pointer;
+      .sublist_header {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .sublist_name {
+        @include subcontent_text;
+      }
+      img {
+        max-width: 25px;
+      }
+      .right_arrow {
+        background: $primary_color;
+        -webkit-text-fill-color: transparent;
+        font-size: 25px;
+      }
+    }
+  }
+}
+.all_transaction {
+  h2 {
+    @include textGradient_red;
+    font-weight: 700;
+    text-align: center;
+    font-size: 28px;
+    padding: 10px 0;
+  }
+  .transaction_list {
+    padding: 20px 0;
+    .transaction_box {
+      background: $light_sky;
+      padding: 20px;
+      border-radius: $border_radius;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      img {
+        margin-right: 15px;
+      }
+      .name_set {
+        h5 {
+          font-size: 18px;
+          font-weight: 600;
+        }
+        p {
+          @include description_text;
+          font-weight: 600;
+        }
+      }
+      .earning_show {
+        p {
+          @include textGradient_red;
+          font-weight: 700;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+.privacypolicy {
+  h2 {
+    @include heading_text;
+    font-size: 22px;
+  }
+  p {
+    @include description_text;
+    font-size: 15px;
+    margin: 5px 0;
+  }
+  h4 {
+    margin: 10px 0;
+    font-size: 22px;
+    font-weight: 600;
+  }
+}
+@media (max-width: 1399.98px) {
+}
+
+@media (max-width: 1199.98px) {
+}
+
+@media (max-width: 991.98px) {
+}
+
+@media (max-width: 767.98px) {
+}
+
+@media (max-width: 575.98px) {
+  .profile_section {
+    padding: 10px;
+    .profile_list {
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 10px 0;
+        li {
+          width: 45%;
+          margin: 3px;
+          a {
+            font-size: 10px;
+            padding: 5px;
+            text-align: center;
+          }
+        }
+      }
+    }
+    .profile_menu_content {
+      padding: 20px;
+      .delete_account {
+        padding: 5px;
+        h3 {
+          font-size: 15px;
+        }
+        ul {
+          li {
+            padding: 10px;
+            p {
+              font-size: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
